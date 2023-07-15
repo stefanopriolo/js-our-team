@@ -1,3 +1,5 @@
+"use strict";
+
 const memberList = [
   {
     userName: "Wayne Barnett",
@@ -22,7 +24,7 @@ const memberList = [
   {
     userName: "Scott Estrada",
     userRole: "Developer",
-    userImg: "scott-estrada-developer.jpg",
+    userImg: "userscott-estrada-developer.jpg",
   },
   {
     userName: "Barbara Ramos",
@@ -32,3 +34,11 @@ const memberList = [
 ];
 
 console.log(memberList);
+
+for (let i = 0; i < memberList.length; i++) {
+  const member = memberList[i];
+
+  console.log(
+    `Name: ${member.userName} / Role: ${member.userRole} / ${member.userImg}`
+  );
+}
